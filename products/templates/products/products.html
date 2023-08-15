@@ -73,7 +73,9 @@
                             <p class="card-text">{{ product.description }}</p>
                         </div>
                         <div class="card-footer text-center">
-                            <button type="button" class="btn btn-outline-success">Відправити в кошик</button>
+                            <a class="btn btn-outline-success" href="{% url 'products:basket_add' product.id %}">
+                                Відправити в кошик
+                            </a>
                         </div>
                     </div>
                 </div>
