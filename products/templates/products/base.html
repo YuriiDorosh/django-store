@@ -44,7 +44,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li>
-                            <a class="dropdown-item" href="{% url 'users:profile' %}">Профіль</a>
+                            <a class="dropdown-item" href="{% url 'users:profile' user.id %}">Профіль</a>
                         </li>
                         <li><a class="dropdown-item" href="orders/orders.html">Замовлення</a></li>
                         {% if user.is_superuser or user.is_staff %}
